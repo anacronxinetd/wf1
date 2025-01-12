@@ -1,0 +1,20 @@
+name: wf2
+on:
+  workflow_dispatch
+jobs:
+  clone_code:
+    name: Clone repo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+  confirm_deploymen:
+      name: Confirm when code is on local runner
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "Done"
+
+    
+    
+  
+
+  
